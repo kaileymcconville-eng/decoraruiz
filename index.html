@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO On-Page -->
+    <title>decoraruiz | Asesoría y Consultoría en Diseño de Interiores en San Gil</title>
+    <meta name="description" content="Descubre los fundamentos del diseño de interiores con Maria Alejandra Ruiz España. Asesoría teórica e informativa sobre distribución espacial, teoría del color e iluminación en San Gil, Colombia.">
+    <meta name="keywords" content="asesoría diseño de interiores, consultoría de espacios, teoría del color interiorismo, diseño interior San Gil, decoraruiz, Maria Alejandra Ruiz España">
+    <meta name="author" content="Maria Alejandra Ruiz España">
+    <meta name="robots" content="index, follow">
+    
+    <!-- SEO Técnico: Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "decoraruiz",
+      "description": "Estudio enfocado en la asesoría informativa y consultoría teórica sobre diseño de interiores y aprovechamiento de espacios.",
+      "image": "https://via.placeholder.com/1200x800?text=decoraruiz+Estudio",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cra. 8 # 20-32",
+        "addressLocality": "San Gil",
+        "addressCountry": "CO"
+      },
+      "telephone": "+573012567632",
+      "email": "kaileymcconville@gmail.com",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Variables de Diseño (Estilo minimalista y elegante) */
+        :root {
+            --color-primary: #2c3531; /* Verde oscuro elegante */
+            --color-secondary: #d1e8e2; /* Menta suave */
+            --color-accent: #d9b08c; /* Tono terracota/madera */
+            --color-accent-hover: #b89270;
+            --color-text-main: #333333;
+            --color-text-muted: #666666;
+            --color-bg-light: #fbfbf9;
+            --color-white: #ffffff;
+            --border-subtle: #eaeaea;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Raleway', sans-serif;
+            --transition-speed: 0.3s;
+        }
+
+        /* Reset y Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: var(--font-body); 
+            background-color: var(--color-bg-light); 
+            color: var(--color-text-main); 
+            line-height: 1.7; 
+        }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        /* Componentes Comunes */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 5%; }
+        .section-padding { padding: 6rem 0; }
+        .text-center { text-align: center; }
+        
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+        .section-subtitle {
+            color: var(--color-text-muted);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 3rem auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-family: var(--font-body);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            border-radius: 2px;
+            cursor: pointer;
+            border: none;
+            transition: background-color var(--transition-speed);
+        }
+        .btn-accent {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+        }
+        .btn-accent:hover { background-color: var(--color-accent-hover); }
+
+        /* Navegación */
+        .navbar {
+            background-color: var(--color-white);
+            border-bottom: 1px solid var(--border-subtle);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+        .logo span { color: var(--color-accent); }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { font-weight: 500; font-size: 0.95rem; transition: color var(--transition-speed); }
+        .nav-links a:hover { color: var(--color-accent); }
+        
+        /* Menú Móvil */
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--color-primary); }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--color-secondary);
+            position: relative;
+            overflow: hidden;
+            padding: 8rem 0;
+        }
+        .hero-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+        }
+        .hero-content { flex: 1; max-width: 600px; }
+        .hero-tag {
+            display: inline-block;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: 0.4rem 1rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            line-height: 1.1;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--color-text-main);
+            margin-bottom: 2.5rem;
+        }
+        .hero-visual {
+            flex: 1;
+            background-color: var(--color-white);
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-subtle);
+            box-shadow: 10px 10px 0px var(--color-accent);
+        }
+
+        /* Beneficios */
+        .benefits-bg { background-color: var(--color-white); }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+        .benefit-card {
+            padding: 2.5rem;
+            background: var(--color-bg-light);
+            border: 1px solid var(--border-subtle);
+            text-align: center;
+            transition: transform var(--transition-speed);
+        }
+        .benefit-card:hover { transform: translateY(-5px); }
+        .b-icon { font-size: 2.5rem; color: var(--color-accent); margin-bottom: 1.5rem; }
+        .benefit-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        /* Propuesta de Valor / Servicios Informativos */
+        .services-wrapper { display: flex; flex-direction: column; gap: 4rem; }
+        .service-row {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+        .service-row:nth-child(even) { flex-direction: row-reverse; }
+        .service-text { flex: 1; }
+        .service-text h3 {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+        .service-visual {
+            flex: 1;
+            background: var(--color-secondary);
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+            font-family: var(--font-heading);
+            font-style: italic;
+        }
+
+        /* Prueba Social (Métricas formativas) */
+        .social-proof { background-color: var(--color-primary); color: var(--color-white); }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .metric-item h4 {
+            font-size: 3.5rem;
+            font-family: var(--font-heading);
+            color: var(--color-accent);
+            line-height: 1;
+        }
+        .metric-item p { margin-top: 0.5rem; font-size: 1.1rem; opacity: 0.9; }
+
+        /* Contacto y Transparencia */
+        .contact-section { background-color: var(--color-white); }
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            background: var(--color-bg-light);
+            border: 1px solid var(--border-subtle);
+            padding: 3rem;
+        }
+        .transparency-data h3 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: var(--color-primary);
+        }
+        .data-item { margin-bottom: 1.5rem; }
+        .data-item strong { display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-accent); margin-bottom: 0.2rem; }
+        
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; }
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--border-subtle);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            background: var(--color-white);
+        }
+        .form-control:focus { outline: none; border-color: var(--color-accent); }
+        textarea.form-control { resize: vertical; min-height: 120px; }
+        .disclaimer { font-size: 0.8rem; color: var(--color-text-muted); margin-top: 1rem; line-height: 1.5; }
+        
+        .alert-success {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-left: 4px solid #28a745;
+        }
+
+        /* Footer */
+        footer { background-color: #1a201e; color: #a0aab2; padding: 4rem 0 2rem; font-size: 0.9rem; }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 3rem;
+        }
+        .footer-brand h4 { font-family: var(--font-heading); color: var(--color-white); font-size: 1.5rem; margin-bottom: 1rem; }
+        .footer-links h5 { color: var(--color-white); margin-bottom: 1.5rem; font-size: 1rem; }
+        .footer-links ul li { margin-bottom: 0.8rem; }
+        .footer-links a:hover { color: var(--color-accent); }
+        .footer-bottom { text-align: center; }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .hero-inner, .contact-layout, .service-row, .service-row:nth-child(even) {
+                flex-direction: column;
+                grid-template-columns: 1fr;
+            }
+            .hero h1 { font-size: 2.8rem; }
+            .hero-visual { width: 100%; }
+            .metrics-grid { grid-template-columns: 1fr; gap: 3rem; }
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%; left: 0; right: 0;
+                background: var(--color-white);
+                padding: 2rem 5%;
+                border-bottom: 1px solid var(--border-subtle);
+            }
+            .nav-links.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">decora<span>ruiz</span></a>
+            <button class="mobile-menu-btn" id="menu-btn" aria-label="Menú">☰</button>
+            <nav class="nav-links" id="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#fundamentos">Fundamentos</a>
+                <a href="#consultoria">Consultoría</a>
+                <a href="#contacto">Solicitar Asesoría</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <span class="hero-tag">Consultoría Educativa</span>
+                <h1>Aprende a armonizar tus espacios interiores</h1>
+                <p>Descubre la teoría detrás de la distribución espacial, el uso estratégico de la luz y la psicología del color. Una asesoría estrictamente informativa para que tomes el control creativo de tus ambientes.</p>
+                <a href="#contacto" class="btn btn-accent">Agenda tu sesión de diseño</a>
+            </div>
+            <div class="hero-visual">
+                <span style="color: var(--color-primary); padding: 2rem; text-align: center;">
+                    [Espacio reservado para imagen abstracta de planos arquitectónicos o paleta de colores. Optimizado para carga rápida]
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios Educativos -->
+    <section id="fundamentos" class="section-padding benefits-bg">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">El Valor del Conocimiento Espacial</h2>
+                <p class="section-subtitle">Entender los fundamentos del diseño antes de comprar mobiliario o pintar paredes evita gastos innecesarios y frustraciones estéticas.</p>
+            </div>
+            <div class="grid-3">
+                <div class="benefit-card">
+                    <div class="b-icon">📐</div>
+                    <h3>Proporción y Escala</h3>
+                    <p>Aprende a medir visualmente tus habitaciones para evitar saturar el espacio con muebles desproporcionados, garantizando un flujo de tráfico natural.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="b-icon">🎨</div>
+                    <h3>Psicología del Color</h3>
+                    <p>Comprende teóricamente cómo los tonos cálidos o fríos alteran la percepción térmica y el estado de ánimo en áreas de descanso o trabajo.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="b-icon">💡</div>
+                    <h3>Capas de Iluminación</h3>
+                    <p>Identifica la diferencia entre iluminación ambiental, de tarea y de acento para transformar atmósferas sin necesidad de intervenciones eléctricas mayores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuesta de Valor (Estrictamente informativa) -->
+    <section id="consultoria" class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Estructura de la Consultoría</h2>
+                <p class="section-subtitle">Sesiones de orientación 1 a 1 donde analizamos tus ideas y te proporcionamos un marco teórico sólido para que ejecutes tu visión.</p>
+            </div>
+            <div class="services-wrapper">
+                
+                <div class="service-row">
+                    <div class="service-text">
+                        <h3>1. Análisis de Estilos y Tendencias</h3>
+                        <p>Realizamos una auditoría visual conjunta. Te explicamos las características fundamentales de estilos como el minimalismo cálido, el diseño industrial o el nórdico, ayudándote a identificar cuál se alinea mejor con tu estilo de vida y la arquitectura base de tu vivienda en San Gil.</p>
+                    </div>
+                    <div class="service-visual">
+                        Muestra de Moodboard Teórico
+                    </div>
+                </div>
+
+                <div class="service-row">
+                    <div class="service-text">
+                        <h3>2. Estrategia de Materiales y Texturas</h3>
+                        <p>Una clase maestra sobre cómo combinar maderas, textiles, metales y piedras. Te orientamos sobre las propiedades visuales de cada material para generar contraste, calidez o amplitud visual, respetando siempre el presupuesto que tengas en mente para tu futuro proyecto.</p>
+                    </div>
+                    <div class="service-visual">
+                        Estudio de Materialidad
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Prueba Social (Métricas de educación) -->
+    <section class="section-padding social-proof">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title" style="color: var(--color-white);">Cultura del Diseño Consciente</h2>
+                <p style="max-width: 600px; margin: 0 auto; opacity: 0.9;">Nuestro enfoque es 100% pedagógico, promoviendo decisiones estéticas fundamentadas y responsables.</p>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <h4>100%</h4>
+                    <p>Enfoque Teórico y Pedagógico</p>
+                </div>
+                <div class="metric-item">
+                    <h4>0</h4>
+                    <p>Promesas Engañosas de Remodelación</p>
+                </div>
+                <div class="metric-item">
+                    <h4>+</h4>
+                    <p>Claridad en la Toma de Decisiones</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario y Transparencia -->
+    <section id="contacto" class="section-padding contact-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Inicia tu Orientación</h2>
+                <p class="section-subtitle">Completa el formulario para agendar tu bloque de asesoría teórica. Estaremos en contacto dentro de nuestros horarios de atención.</p>
+            </div>
+            
+            <div class="contact-layout">
+                <div class="transparency-data">
+                    <h3>Datos de Contacto y Transparencia</h3>
+                    <p style="margin-bottom: 2rem; color: var(--color-text-muted);">Información oficial verificable para su tranquilidad y seguridad corporativa.</p>
+                    
+                    <div class="data-item">
+                        <strong>Profesional Responsable</strong>
+                        <span>Maria Alejandra Ruiz España</span>
+                    </div>
+                    <div class="data-item">
+                        <strong>Sede de Operaciones</strong>
+                        <span>Cra. 8 # 20-32, San Gil, Colombia</span>
+                    </div>
+                    <div class="data-item">
+                        <strong>Horario de Recepción</strong>
+                        <span>Todos los días de la semana<br>08:00 am - 05:00 pm</span>
+                    </div>
+                    <div class="data-item">
+                        <strong>Canales Directos</strong>
+                        <span>Tel: 3012567632<br>Email: kaileymcconville@gmail.com</span>
+                    </div>
+                    
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: #fff3cd; border-left: 4px solid #ffeeba; font-size: 0.85rem; color: #856404;">
+                        <strong>Aviso de Alcance:</strong> Los servicios aquí descritos son de consultoría visual y estética. No incluyen, bajo ninguna circunstancia, cálculos estructurales, alteraciones arquitectónicas, ni demoliciones.
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" class="form-control" required placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono de Contacto</label>
+                            <input type="tel" id="telefono" class="form-control" required placeholder="Número para agendar la sesión">
+                        </div>
+                        <div class="form-group">
+                            <label for="espacio">Espacio de Interés Teórico</label>
+                            <select id="espacio" class="form-control" required>
+                                <option value="" disabled selected>Selecciona el área principal</option>
+                                <option value="salon">Salón / Sala de estar</option>
+                                <option value="dormitorio">Dormitorio principal</option>
+                                <option value="estudio">Oficina en casa / Estudio</option>
+                                <option value="integral">Teoría general de la vivienda</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">¿Qué aspecto del diseño deseas aprender o consultar?</label>
+                            <textarea id="mensaje" class="form-control" required placeholder="Ej. Me gustaría entender cómo combinar colores fríos en mi sala..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent" style="width: 100%;">Agenda tu sesión de diseño</button>
+                        <p class="disclaimer">Al hacer clic, aceptas nuestra política de tratamiento de datos personales. No compartiremos tu información con terceros.</p>
+                        
+                        <div class="alert-success" id="successMsg">
+                            Su solicitud de asesoría ha sido registrada exitosamente. Maria Alejandra se pondrá en contacto con usted a la brevedad dentro del horario de atención.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h4>decoraruiz</h4>
+                    <p style="max-width: 400px; margin-top: 1rem;">Estudio dedicado a la divulgación, educación y consultoría en los principios fundamentales del diseño de interiores.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Marco Legal y Transparencia</h5>
+                    <ul>
+                        <li><a href="politica-de-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="terminos-y-condiciones.html">Términos y Condiciones de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> decoraruiz por Maria Alejandra Ruiz España. San Gil, Colombia. Todos los derechos reservados.</p>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.7;">Sitio web desarrollado cumpliendo estrictamente con las políticas de destino para garantizar una navegación segura e informativa.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (Sin librerías externas) -->
+    <script>
+        // Actualización de año en footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Toggle del menú móvil
+        const menuBtn = document.getElementById('menu-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Manejo asíncrono del formulario (Previene redirecciones)
+        const form = document.getElementById('contactForm');
+        const successMsg = document.getElementById('successMsg');
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Estado visual de carga
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Procesando...';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+
+            // Simulación de envío al servidor
+            setTimeout(() => {
+                form.reset();
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = '1';
+                successMsg.style.display = 'block';
+                
+                // Limpiar mensaje
+                setTimeout(() => {
+                    successMsg.style.display = 'none';
+                }, 8000);
+            }, 1200);
+        });
+    </script>
+</body>
+</html>
